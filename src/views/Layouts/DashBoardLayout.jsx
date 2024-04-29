@@ -23,6 +23,7 @@ import MaleFemale from "../Charts/MaleFemale";
 
 export default function DashBoardLayout() {
   const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const menuItems = [
     { text: 'Booking', component: <BookingContent /> },
@@ -33,17 +34,16 @@ export default function DashBoardLayout() {
 
   const [activeTab, setActiveTab] = useState("Booking");
   const [selectedMenuItem, setSelectedMenuItem] = useState(null);
-
   const [drawerOpen, setDrawerOpen] = React.useState(false);
 
   const handleTabChange = (event, newValue) => {
     setActiveTab(newValue);
   };
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
   const handleDrawerOpen = () => {
     setDrawerOpen(true);
   };
+
   const handleMenuItemClick = (text) => {
     setSelectedMenuItem(text);
     setDrawerOpen(false);
@@ -52,6 +52,7 @@ export default function DashBoardLayout() {
   const handleDrawerClose = () => {
     setDrawerOpen(false);
   };
+  
   return (
     <>
       <Box name="dashboardBox" p={3}>

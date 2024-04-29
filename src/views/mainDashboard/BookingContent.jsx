@@ -1,16 +1,10 @@
 import React from "react";
 import {
   Box,
-  Grid,
-  Tab,
-  Tabs,
-  TextField,
-  Container,
-  useTheme,
+  Grid
 } from "@mui/material";
 import Typography from "@mui/material/Typography";
 import SsidChartIcon from "@mui/icons-material/SsidChart";
-// import { ReactComponent as VectorImage } from '../../public/6520.svg'; 
 
 
 export default function BookingContent() {
