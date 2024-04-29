@@ -52,7 +52,7 @@ export default function DashBoardLayout() {
   const handleDrawerClose = () => {
     setDrawerOpen(false);
   };
-  
+
   return (
     <>
       <Box name="dashboardBox" p={3}>
@@ -84,7 +84,7 @@ export default function DashBoardLayout() {
                   textColor="primary"
                   scrollButtons="auto"
                   centered
-                  sx={{ "& .Mui-selected": { borderBottom: "none" } }}
+                  sx={{ "& .Mui-selected": { borderBottom: "none",color: "#006566" } }}
                 >
                   <Tab label="Booking" className="navText" value="Booking" />
                   <Tab

@@ -27,9 +27,13 @@ const NavBar = () => {
     <Box flex={4} height={800} sx={{ borderRadius: "30px", margin: "40px" }}>
       <TabContext value={value} sx={{ justifyContent: "right" }}>
         <Tabs
+        sx={{
+        "& .Mui-selected": {
+          color: "#006566",
+        }}}
           value={value}
           onChange={handleChange}
-          textColor="primary"
+          textColor="#006566"
           variant={isSmallScreen ? "scrollable" : "standard"}
           scrollButtons={isSmallScreen ? "auto" : "off"}
           centered={!isSmallScreen}

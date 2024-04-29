@@ -124,11 +124,11 @@ export default function BookingContent() {
 
         </Box>
       </Grid>
-      <Grid item lg={3} sm={6}>
+      <Grid item lg={3} sm={6} spacing={5} direction="column">
         <Box
           sx={{
-            width: 80,
-            height: 80,
+            width: 100,
+            height: 120,
             borderRadius: 3,
             marginLeft: "20px",
             bgcolor: "white",
