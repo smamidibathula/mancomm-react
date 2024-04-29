@@ -120,7 +120,7 @@ export default function BookingContent() {
             },
           }}
         >
-         <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwGMViBZzBAYFuTjzqUBctw4JDvUxW7FNFGl4B0gSElg&s"} alt="Sample" style={{ width: '100%', height: '100%' }} />
+         <img src={"../../../public/images.jpeg"} alt="Sample" style={{ width: '100%', height: '100%' }} />
 
         </Box>
       </Grid>
